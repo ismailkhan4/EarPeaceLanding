@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EarPeace — Product Experience</title>
+    <meta
+      name="description"
+      content="Scroll-driven product experience demo — EarPeace"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- fixed canvas used for hero animation -->
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <!-- top navigation (minimal) -->
+    <header class="topbar">
+      <div class="logo">EARPEACE</div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#battery">Battery</a>
+        <a href="#comfort">Comfort</a>
+        <a href="#buy">Buy</a>
+      </nav>
+    </header>
+
+    <!-- Hero section controls the canvas frames and initial message -->
+    <section class="section hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">EARPEACE</h1>
+        <p class="hero-sub">
+          A new era of sound. Experience silence and clarity together.
+        </p>
+        <a class="cta" href="#features">Explore</a>
+      </div>
+    </section>
+
+    <!-- Feature sections -->
+    <main>
+      <section class="section feature" id="features" data-parallax-speed="0.06">
+        <div class="container">
+          <h2 class="section-title">Immersive Sound</h2>
+          <p class="section-copy">
+            Active noise cancellation that adapts to your environment in real
+            time.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sticky specs area (long scrolling) -->
+      <section class="section sticky_specs_section">
+        <div class="sticky_specs">
+          <div class="spec" data-index="0">Active Noise Cancellation</div>
+          <div class="spec" data-index="1">Adaptive Transparency</div>
+          <div class="spec" data-index="2">H2-Class Processing</div>
+          <div class="spec" data-index="3">Spatial Audio</div>
+          <div class="spec" data-index="4">34 Hour Battery</div>
+        </div>
+
+        <div class="specs-detail">
+          <div class="spec-detail" id="spec-0">
+            <h3>Active Noise Cancellation</h3>
+            <p>Block unwanted noise — focus on what matters.</p>
+          </div>
+          <div class="spec-detail" id="spec-1">
+            <h3>Adaptive Transparency</h3>
+            <p>Hear the world when you need to without removing your buds.</p>
+          </div>
+          <div class="spec-detail" id="spec-2">
+            <h3>H2-Class Processing</h3>
+            <p>Powerful audio processing for crisp mids and rich bass.</p>
+          </div>
+          <div class="spec-detail" id="spec-3">
+            <h3>Spatial Audio</h3>
+            <p>Immersive multi-dimensional soundstage for music and video.</p>
+          </div>
+          <div class="spec-detail" id="spec-4">
+            <h3>34 Hour Battery</h3>
+            <p>All-day listening with fast-charging support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section battery" id="battery" data-parallax-speed="0.04">
+        <div class="container">
+          <h2 class="section-title">Long-Lasting Battery</h2>
+          <p class="section-copy">
+            Keep going — lengthy listening, quick top-up.
+          </p>
+        </div>
+      </section>
+
+      <section class="section comfort" id="comfort" data-parallax-speed="0.03">
+        <div class="container">
+          <h2 class="section-title">Engineered for Comfort</h2>
+          <p class="section-copy">
+            Lightweight design with soft tips for hours of comfort.
+          </p>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="buy">
+        <div class="container">
+          <h2 class="section-title">Ready to bring EarPeace home?</h2>
+          <a class="cta large" href="#">Buy Now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> EarPeace. All rights reserved.</div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
