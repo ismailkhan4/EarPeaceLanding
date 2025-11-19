@@ -11,32 +11,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- fixed canvas used for hero animation -->
     <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
-    <!-- top navigation (minimal) -->
-    <header class="topbar">
-      <div class="logo">EARPEACE</div>
-      <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#battery">Battery</a>
-        <a href="#comfort">Comfort</a>
-        <a href="#buy">Buy</a>
-      </nav>
-    </header>
-
-    <!-- Hero section controls the canvas frames and initial message -->
     <section class="section hero" id="hero">
       <div class="hero-content">
         <h1 class="hero-title">EARPEACE</h1>
         <p class="hero-sub">
           A new era of sound. Experience silence and clarity together.
         </p>
-        <a class="cta" href="#features">Explore</a>
       </div>
     </section>
 
-    <!-- Feature sections -->
     <main>
       <section class="section feature" id="features" data-parallax-speed="0.06">
         <div class="container">
@@ -48,7 +33,6 @@
         </div>
       </section>
 
-      <!-- Sticky specs area (long scrolling) -->
       <section class="section sticky_specs_section">
         <div class="sticky_specs">
           <div class="spec" data-index="0">Active Noise Cancellation</div>
@@ -99,17 +83,10 @@
           </p>
         </div>
       </section>
-
-      <section class="section cta-section" id="buy">
-        <div class="container">
-          <h2 class="section-title">Ready to bring EarPeace home?</h2>
-          <a class="cta large" href="#">Buy Now</a>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
-      <div>© <span id="year"></span> EarPeace. All rights reserved.</div>
+      <div>© <span id="year"></span></div>
     </footer>
 
     <script type="module" src="./script.js"></script>
